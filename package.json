@@ -1,0 +1,17 @@
+{
+  "name": "reddit-proxy-bridge",
+  "version": "1.0.0",
+  "description": "Proxy bridge for Google Apps Script to access Reddit via DataImpulse",
+  "main": "proxy-bridge.js",
+  "scripts": {
+    "start": "node proxy-bridge.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "https-proxy-agent": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
