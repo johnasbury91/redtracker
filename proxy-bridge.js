@@ -15,7 +15,7 @@ const PROXY_CONFIG = {
   port: process.env.PROXY_PORT || '823',
   username: process.env.PROXY_USERNAME || '6bedabce678df1c53167',
   password: process.env.PROXY_PASSWORD || 'e9d405b46163e5ee',
-  country: process.env.PROXY_COUNTRY || 'us'
+  // country: process.env.PROXY_COUNTRY || 'us'
 };
 
 // Security: API key to prevent unauthorized access
@@ -141,6 +141,7 @@ app.post('/fetch', async (req, res) => {
   }
 });
 
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`========================================`);
@@ -154,3 +155,5 @@ app.listen(PORT, () => {
   console.log(`Ready to proxy Reddit requests!`);
   console.log(`========================================`);
 });
+
+
